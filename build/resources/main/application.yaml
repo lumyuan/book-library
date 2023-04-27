@@ -1,0 +1,45 @@
+server:
+  port: 8881
+  #正式版是否开启message
+  error:
+    include-message: always
+    include-exception: true
+
+spring:
+  thymeleaf:
+    encoding: UTF-8
+    enabled: true
+    cache: true
+    check-template: true
+    check-template-location: true
+    servlet:
+      content-type: text/html
+    excluded-view-names:
+    mode: HTML
+    prefix: classpath:/templates/
+    suffix: .html
+
+
+  mvc:
+    static-path-pattern: /**
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    #本地测试
+    url: jdbc:mysql://localhost:3306/book_store?serverTimezone=GMT%2B8&characterEncoding=utf8&userSSL=false&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 123456
+
+  servlet:
+    multipart:
+      location: files
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+
+#mybatis-plus配置
+mybatis-plus:
+  configuration:
+    #开启驼峰命名映射
+    map-underscore-to-camel-case: true

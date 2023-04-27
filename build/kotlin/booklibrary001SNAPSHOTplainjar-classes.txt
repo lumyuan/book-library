@@ -1,0 +1,1 @@
+C:\Users\22059\IdeaProjects\book-library\build\classes\kotlin\main\com\example\booklibrary\BookLibraryApplication.class;C:\Users\22059\IdeaProjects\book-library\build\classes\kotlin\main\com\example\booklibrary\BookLibraryApplicationKt.class;C:\Users\22059\IdeaProjects\book-library\build\classes\kotlin\main\com\example\booklibrary\module\test\rest\TestController.class
